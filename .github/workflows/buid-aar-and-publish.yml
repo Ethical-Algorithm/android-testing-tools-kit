@@ -23,8 +23,6 @@ jobs:
           java-version: 17
       - name: Setup Build Version
         run: bash ./.scripts/setup_build_version.sh
-      - name: Setup Demo Keystore
-        run: bash ./.scripts/setup_keystore_config.sh
       - name: Setup Local Properties
         run: bash ./.scripts/setup_local_properties.sh
       - name: Build Module AAR

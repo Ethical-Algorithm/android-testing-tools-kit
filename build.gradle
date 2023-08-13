@@ -13,8 +13,8 @@ buildscript {
         // Runner
         testInstrumentationRunnerValue = "androidx.test.runner.AndroidJUnitRunner"
 
-        testToolsKitName = project.testToolsKitName
-        testToolsKitBuild = project.testToolsKitBuild.toInteger()
+        moduleVersion = project.versionName
+        moduleBuild = project.versionBuild.toInteger()
 
         // GitHub Config
         gitHubUser = localProperties['gitHubUser']
@@ -33,7 +33,6 @@ plugins {
     id 'org.jetbrains.kotlin.android' version "$kotlinPluginVersion" apply false
     id 'org.jetbrains.dokka' version "$dokkaPluginVersion" apply false
     id 'maven-publish'
-    id 'jacoco'
 }
 
 task clean(type: Delete) {

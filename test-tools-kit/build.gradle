@@ -41,7 +41,7 @@ publishing {
         maven(MavenPublication) {
             groupId 'net.ealgorithm'
             artifactId 'test-tools-kit'
-            version "$testToolsKitName.$testToolsKitBuild"
+            version "$moduleVersion.$moduleBuild"
             artifact 'build/outputs/aar/test-tools-kit-release.aar'
         }
     }
@@ -49,7 +49,7 @@ publishing {
     repositories {
         maven {
             name = 'GitHubPackages'
-            url = 'https://maven.pkg.github.com/Ethical-Algorithm/android-modules'
+            url = 'https://maven.pkg.github.com/Ethical-Algorithm/android-testing-tools-kit'
             credentials {
                 username = gitHubUser
                 password = gitHubToken

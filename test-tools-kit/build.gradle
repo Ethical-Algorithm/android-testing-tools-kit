@@ -1,0 +1,59 @@
+plugins {
+    id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
+    id 'maven-publish'
+}
+
+android {
+    compileSdk compileSDKVersion
+    namespace 'net.ealgorithm.testtoolskit'
+
+    defaultConfig {
+        minSdk minSDKVersion
+        targetSdk targetSDKVersion
+
+        testInstrumentationRunner testInstrumentationRunnerValue
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility javaVersionValue
+        targetCompatibility javaVersionValue
+    }
+    kotlinOptions {
+        jvmTarget = javaVersionValue.toString()
+    }
+}
+
+dependencies {
+    implementation(libs.androidx.core)
+}
+
+// Publishing Project in Maven
+publishing {
+    publications {
+        maven(MavenPublication) {
+            groupId 'net.ealgorithm'
+            artifactId 'test-tools-kit'
+            version "$testToolsKitName.$testToolsKitBuild"
+            artifact 'build/outputs/aar/test-tools-kit-release.aar'
+        }
+    }
+
+    repositories {
+        maven {
+            name = 'GitHubPackages'
+            url = 'https://maven.pkg.github.com/Ethical-Algorithm/android-modules'
+            credentials {
+                username = gitHubUser
+                password = gitHubToken
+            }
+        }
+    }
+}

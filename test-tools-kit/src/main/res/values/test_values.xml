@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Booleans -->
+    <bool name="test_is_true">true</bool>
+    <bool name="test_is_false">false</bool>
+
+    <!-- Colors -->
+    <color name="test_white">#FFF</color>
+    <color name="test_black">#000</color>
+
+    <!-- Dimens -->
+    <dimen name="test_dimen_10dp">10dp</dimen>
+
+    <!-- Strings -->
+    <string name="test_string_car">Car</string>
+    <string name="test_string_placeholder">This Car is %s</string>
+
+    <!-- Array values -->
+    <string-array name="test_string_array_brands">
+        <item>Toyota</item>
+        <item>Ford</item>
+    </string-array>
+</resources>

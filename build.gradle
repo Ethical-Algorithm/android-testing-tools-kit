@@ -22,7 +22,7 @@ buildscript {
 
         // Plugins Version
         gradlePluginVersion = '8.0.1'
-        kotlinPluginVersion = '1.8.0'
+        kotlinPluginVersion = '1.9.10'
         dokkaPluginVersion = '1.8.10'
     }
 }

@@ -1,2 +1,17 @@
+[versions]
+gradlePluginVersion = "8.1.0"
+kotlinPluginVersion = "1.9.10"
+dokkaPluginVersion = "1.9.0"
+
+androidXCoreVersion="1.8.0"
+
 [libraries]
-androidx-core="androidx.core:core-ktx:1.8.0"
+androidx-core={ group = "androidx.core", name = "core-ktx", version.ref = "androidXCoreVersion" }
+
+[plugins]
+com-android-application = { id = "com.android.application", version.ref = "gradlePluginVersion" }
+com-android-library = { id = "com.android.library", version.ref = "gradlePluginVersion" }
+org-jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlinPluginVersion" }
+org-jetbrains-kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlinPluginVersion" }
+org-jetbrains-kotlin-parcelize = { id = "org.jetbrains.kotlin.plugin.parcelize", version.ref = "kotlinPluginVersion" }
+org-jetbrains-dokka = { id = "org.jetbrains.dokka", version.ref = "dokkaPluginVersion" }

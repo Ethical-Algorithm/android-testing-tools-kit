@@ -1,4 +1,4 @@
-package com.nec.testutils
+package net.ealgorithm.testtoolskit
 
 object Placeholders {
     const val NAME = "John Doe"

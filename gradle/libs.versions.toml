@@ -1,6 +1,6 @@
 [versions]
 gradlePluginVersion = "8.1.0"
-kotlinPluginVersion = "1.9.10"
+kotlinPluginVersion = "1.9.22"
 dokkaPluginVersion = "1.9.0"
 
 androidXCoreVersion="1.8.0"

@@ -1,5 +1,5 @@
 [versions]
-gradlePluginVersion = "8.1.0"
+gradlePluginVersion = "8.2.2"
 kotlinPluginVersion = "1.9.10"
 dokkaPluginVersion = "1.9.0"
 

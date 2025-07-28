@@ -5,11 +5,11 @@ buildscript {
 
     ext {
         // Android Config
-        compileSDKVersion = 32
-        targetSDKVersion = 32
+        compileSDKVersion = 35
+        targetSDKVersion = 35
         minSDKVersion = 24
         // Compile Options
-        javaVersionValue = JavaVersion.VERSION_11
+        javaVersionValue = JavaVersion.VERSION_17
         // Runner
         testInstrumentationRunnerValue = "androidx.test.runner.AndroidJUnitRunner"
 
@@ -30,6 +30,6 @@ plugins {
     id 'maven-publish'
 }
 
-task clean(type: Delete) {
-    delete rootProject.buildDir
+tasks.register('clean', Delete) {
+    delete layout.buildDirectory
 }

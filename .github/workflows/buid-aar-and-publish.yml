@@ -5,10 +5,14 @@ on:
     branches:
       - main
 
+permissions:
+  contents: write
+  packages: write
+
 env:
   moduleVersion: ${{ vars.MODULE_VERSION }}
   moduleBuild: ${{ github.run_number }}
-  token: ${{ secrets.ALL_REPO_TOKEN }}
+  token: ${{ secrets.GITHUB_TOKEN }}
 
 jobs:
   build:

@@ -1,9 +1,9 @@
 [versions]
-gradlePluginVersion = "8.1.0"
-kotlinPluginVersion = "1.9.10"
-dokkaPluginVersion = "1.9.0"
+gradlePluginVersion = "8.11.1"
+kotlinPluginVersion = "2.2.0"
+dokkaPluginVersion = "2.0.0"
 
-androidXCoreVersion="1.8.0"
+androidXCoreVersion="1.16.0"
 
 [libraries]
 androidx-core={ group = "androidx.core", name = "core-ktx", version.ref = "androidXCoreVersion" }
